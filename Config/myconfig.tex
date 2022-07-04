@@ -48,10 +48,14 @@
 
 % Control language specific modifications
 % This can be english or spanish
-\newcommand{\myLanguage}{english}
+\newcommand{\myLanguage}{spanish}
 
 % Control compilation flavour (for PFCs, TFMs, TFGs, Thesis, etc...)
 % Degree (titulación), can be:
+% URJC Degrees:
+% ITIURJC- Grado en Ingeniería en Tecnologías Industriales (ESCET-URJC)
+%
+% UAH Degrees:
 % GITT   - Grado en Ingeniería en Tecnologías de la Telecomunicación
 % GIEC   - Grado en Ingeniería Electrónica de Comunicaciones
 % GIT    - Grado en Ingeniería Telemática
@@ -83,7 +87,7 @@
 % You can include additional degrees and modify Config/myconfig.tex
 % Config/postamble.tex and Book/cover/cover.tex, generating new specific
 % cover files if needed. Contact me if you want additional details
-\newcommand{\myDegree}{GIEC}
+\newcommand{\myDegree}{ITIURJC}
 
 \newcommand{\myFlagSplittedAdvisors}{true} % if false it will set
                                 % "Tutores/Advisors" in the cover
@@ -105,42 +109,42 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Author data
-\newcommand{\myAuthorName}{Javier}
-\newcommand{\myAuthorSurname}{Macías Guarasa}
+\newcommand{\myAuthorName}{Rubén}
+\newcommand{\myAuthorSurname}{Nieto Capuchino}
 \newcommand{\myAuthorFullName}{\myAuthorName{} \myAuthorSurname{}}
 \newcommand{\myAuthorGender}{male} 
-\newcommand{\myAuthorEmail}{javier.maciasguarasa@uah.es}
-\newcommand{\myAuthorDNI}{12345678-L} 
+\newcommand{\myAuthorEmail}{ruben.nieto@urjc.es}
+\newcommand{\myAuthorDNI}{12345678-Z} 
 % Personal details for the anteproyecto request
 % Not required in some cases
 \newcommand{\myAuthorStreet}{C/ Calle de la Calle, 22}
-\newcommand{\myAuthorCity}{Meco}
-\newcommand{\myAuthorPostalCode}{28880}
+\newcommand{\myAuthorCity}{Móstoles}
+\newcommand{\myAuthorPostalCode}{28933}
 \newcommand{\myAuthorProvince}{Madrid}
 \newcommand{\myAuthorTelephone}{666666666}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Advisor data
-\newcommand{\myAcademicTutorFullName}{Roberto Barra Chicote} 
+\newcommand{\myAcademicTutorFullName}{NOMBRE TUTOR} 
 \newcommand{\myAcademicTutorGender}{male}
 \newcommand{\myAcademicTutorDNI}{11111111-A}
 \newcommand{\myAcademicTutorDepartmentOrInstitution}{Amazon Text-To-Speech Research} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CoAdvisor data
-\newcommand{\myCoTutorFullName}{María Isidra de Guzmán} 
+\newcommand{\myCoTutorFullName}{NOMBRE TUTORA} 
 \newcommand{\myCoTutorGender}{female}
 \newcommand{\myCoTutorDNI}{22222222-B}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Affiliation
-\newcommand{\mySchool}{Escuela Politécnica Superior}
-\newcommand{\myUniversity}{Universidad de Alcalá}
-\newcommand{\myUniversityAcronym}{UAH}
+\newcommand{\mySchool}{Escuela Superior de Ciencias Experimentales y Tecnología}
+\newcommand{\myUniversity}{Universidad Rey Juan Carlos}
+\newcommand{\myUniversityAcronym}{URJC}
 
-\newcommand{\myDepartment}{Departamento de Electrónica}
-\newcommand{\myDepartmentEnglish}{Departament of Electronics}
+\newcommand{\myDepartment}{Departamento de Matemática Aplicada, Ciencia e Ingeniería de los Materiales y Tecnología Electrónica}
+\newcommand{\myDepartmentEnglish}{Departament of Applied Mathematics, Materials Science and Engineering and Electronics Technology}
 
 \newcommand{\myPhDProgram}{Programa de Doctorado en Electrónica: Sistemas Electrónicos Avanzados. Sistemas Inteligentes}
 \newcommand{\myPhDProgramEnglish}{PhD. Program in Electronics: Advanced Electronic Systems. Intelligent Systems}
@@ -155,9 +159,9 @@
 \newcommand{\myTribunalSecondSpokesperson}{Name of the second vocal} 
 \newcommand{\myTribunalAlternateMember}{Name of the alternate member}
 \newcommand{\myTribunalSecretary}{Name of the secretary (if needed)}
-\newcommand{\myDepartmentSecretary}{María del Carmen Pérez Rubio} % Por TFGs & TFMs & MUSEA-TFMs paperwork
+\newcommand{\myDepartmentSecretary}{Name of the secretary Department} % Por TFGs & TFMs & MUSEA-TFMs paperwork
 \newcommand{\myDepartmentSecretaryGender}{female}                 % Por TFGs & TFMs & MUSEA-TFMs paperwork
-\newcommand{\myTFMComisionPresident}{Felipe Espinosa Zapata}      % Por MUIE TFMs, no need to define gender... presidentE always
+\newcommand{\myTFMComisionPresident}{Name of the Commision President}      % Por MUIE TFMs, no need to define gender... presidentE always
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Calendar dates 
@@ -168,7 +172,7 @@
 \newcommand{\myThesisDepositDateEnglish}{January 1\textsuperscript{st}, 2021} 
 
 % For RR, myThesisDefenseDate is date to be shown in the cover
-\newcommand{\myThesisDefenseYear}{2021}
+\newcommand{\myThesisDefenseYear}{2021/22}
 \newcommand{\myThesisDefenseDate}{6 de enero de \myThesisDefenseYear{}}
 \newcommand{\myThesisdefenseDateEnglish}{January 6\textsuperscript{th}, \myThesisDefenseYear{}}
 % If you prefer British English for the date, use this:
@@ -177,12 +181,8 @@
 \newcommand{\myPaperworkDate}{2 de enero de 2021}
 
 
-
-%\newcommand{\myResearchVicerrector}{Excma. Sra. María Luisa Marina Alegre}
-\newcommand{\myResearchVicerrector}{Excmo. Sr. Francisco J. de la Mata de la Mata}
+\newcommand{\myResearchVicerrector}{Excmo. Sr. VICERRECTOR/A}
 \newcommand{\myResearchVicerrectorGender}{male}
-
-
 
 
 \newcommand{\myResearchReportID}{RR-2021-01}

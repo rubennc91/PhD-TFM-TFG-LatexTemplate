@@ -588,10 +588,27 @@
                                               }
                                             }
                                             {
-                                              \newcommand{\myWorkType}{TFG}
-                                              \newcommand{\myDegreefull}{ERROR: Defined degree (\myDegree) unknown, check \texttt{config/myconfig.tex}} 
-                                              \newcommand{\myWorkTypeFull}{ERROR: Defined degree (\myDegree) unknown, check \texttt{config/myconfig.tex}}
-                                            }
+                                            	 
+                                           		\ifthenelse{\equal{\myDegree}{ITIURJC}}
+                                           		{
+                                            			\newcommand{\myDegreefull}{Grado en Ingeniería en Tecnologías Industriales}
+                                            			\newcommand{\myWorkType}{TFGURJC}
+                                            			\ifthenelse{\equal{\myLanguage}{spanish}}
+                                            			{
+                                            				\newcommand{\myWorkTypeFull}{Trabajo Fin de Grado}
+                                            			}
+                                            			{
+                                            				% This could be translated. I'm leaving this in Spanish...
+                                            				\newcommand{\myWorkTypeFull}{Bachelor's Thesis}
+                                            				% \newcommand{\myWorkTypeFull}{Trabajo Fin de Grado}
+                                            			}
+                                           		}
+                                           		{
+	                                              \newcommand{\myWorkType}{TFG}
+	                                              \newcommand{\myDegreefull}{ERROR: Defined degree (\myDegree) unknown, check \texttt{config/myconfig.tex}} 
+	                                              \newcommand{\myWorkTypeFull}{ERROR: Defined degree (\myDegree) unknown, check \texttt{config/myconfig.tex}}
+                                            	}
+                                        	}
                                           }
                                         }
                                       }
