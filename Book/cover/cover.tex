@@ -82,9 +82,17 @@
 %            \input{cover/cover-geintra-rr.tex}
           }
           {
-            ERROR: in \texttt{cover/cover.tex} Defined book type (\myWorkType) unknown so that work type is
-            undefined or wrong (\myWorkType), check also \texttt{config/myconfig.tex}
-          }
+          		\ifthenelse{\equal{\myWorkType}{TFGURJC}}
+          		{
+          		%        \input{cover/portada-phd-uah.tex}
+          			\input{cover/portada-tfg-urjc.tex}
+          			\input{cover/cover-pfc-tfg-tfm-urjc.tex}
+          		}
+        	  	{
+		            ERROR: in \texttt{cover/cover.tex} Defined book type (\myWorkType) unknown so that work type is
+            		undefined or wrong (\myWorkType), check also \texttt{config/myconfig.tex}
+          		}
+      		}
         }
       }
       

@@ -34,15 +34,21 @@
 
 \ifthenelse{\equal{\myWorkType}{TFG}}
 {
-  \input{cover/backpage-tfg-uah.tex}
+		\input{cover/backpage-tfg-uah.tex}
 }
 {
-\ifthenelse{\equal{\myWorkType}{TFM}}
-{
-  \input{cover/backpage-tfg-uah.tex}
-}
-{
-}
+	\ifthenelse{\equal{\myWorkType}{TFGURJC}}
+	{
+		\input{cover/backpage-tfg-urjc.tex}
+	}
+	{
+		\ifthenelse{\equal{\myWorkType}{TFM}}
+		{
+		  \input{cover/backpage-tfg-uah.tex}
+		}
+		{
+		}
+	}
 }
 
 %%% Local Variables:
