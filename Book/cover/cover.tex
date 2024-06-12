@@ -35,14 +35,14 @@
 
 \ifthenelse{\equal{\myWorkType}{TFG}}
 {
-  \input{cover/portada-tfg-uah.tex}
-  \input{cover/cover-pfc-tfg-tfm-uah.tex}
+  \input{Book/cover/portada-tfg-uah.tex}
+  \input{Book/cover/cover-pfc-tfg-tfm-uah.tex}
 }
 {
   \ifthenelse{\equal{\myWorkType}{TFC}}
   {
-    \input{cover/portada-pfc-uah.tex}
-    \input{cover/cover-pfc-tfg-tfm-uah.tex}
+    \input{Book/cover/portada-pfc-uah.tex}
+    \input{Book/cover/cover-pfc-tfg-tfm-uah.tex}
   }
   {
   \ifthenelse{\equal{\myWorkType}{TFM}}
@@ -50,14 +50,14 @@
   % Exception for MUCTE
     \ifthenelse{\equal{\myDegree}{MUCTE}}
       { 
-      \input{cover/portada-tfm-uah-pre2016.tex}
-      \input{cover/portada-tfm-uah-antigua.tex}
-      \input{cover/cover-pfc-tfg-tfm-uah.tex}
+      \input{Book/cover/portada-tfm-uah-pre2016.tex}
+      \input{Book/cover/portada-tfm-uah-antigua.tex}
+      \input{Book/cover/cover-pfc-tfg-tfm-uah.tex}
       }
       {
       %  Same than TFGs from 2016
-      \input{cover/portada-tfg-uah.tex}
-      \input{cover/cover-pfc-tfg-tfm-uah.tex}
+      \input{Book/cover/portada-tfg-uah.tex}
+      \input{Book/cover/cover-pfc-tfg-tfm-uah.tex}
       %      \input{cover/portada-tfm-uah.tex}
       %      \input{cover/cover-pfc-tfg-tfm-uah.tex}
       }
@@ -67,29 +67,29 @@
       \ifthenelse{\equal{\myWorkType}{PHDUAH}}
       {
 %        \input{cover/portada-phd-uah.tex}
-        \input{cover/cover-phd-uah.tex}
+        \input{Book/cover/cover-phd-uah.tex}
       }
       {
         \ifthenelse{\equal{\myWorkType}{PHDUPM}}
         {
-          \input{cover/portada-phd-upm.tex}
-          \input{cover/cover-phd-upm.tex}
+          \input{Book/cover/portada-phd-upm.tex}
+          \input{Book/cover/cover-phd-upm.tex}
         }
         {
           \ifthenelse{\equal{\myWorkType}{GEINTRARR}}
           {
-            \input{cover/portada-geintra-rr.tex}
+            \input{Book/cover/portada-geintra-rr.tex}
 %            \input{cover/cover-geintra-rr.tex}
           }
           {
           		\ifthenelse{\equal{\myWorkType}{TFGURJC}}
           		{
           		%        \input{cover/portada-phd-uah.tex}
-          			\input{cover/portada-tfg-urjc.tex}
-          			\input{cover/cover-pfc-tfg-tfm-urjc.tex}
+          			\input{Book/cover/portada-tfg-urjc.tex}
+          			\input{Book/cover/cover-pfc-tfg-tfm-urjc.tex}
           		}
         	  	{
-		            ERROR: in \texttt{cover/cover.tex} Defined book type (\myWorkType) unknown so that work type is
+		            ERROR: in \texttt{Book/cover/cover.tex} Defined book type (\myWorkType) unknown so that work type is
             		undefined or wrong (\myWorkType), check also \texttt{config/myconfig.tex}
           		}
       		}
